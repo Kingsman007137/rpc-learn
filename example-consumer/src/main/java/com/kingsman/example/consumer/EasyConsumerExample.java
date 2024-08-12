@@ -12,7 +12,7 @@ public class EasyConsumerExample {
         UserService userService = null;
         User user = new User();
         user.setName("Kingsman");
-        User newUser = userService.getName(user);
+        User newUser = userService.getUser(user);
         if (newUser != null) {
             System.out.println("获取用户成功：" + newUser.getName());
         } else {

@@ -13,5 +13,5 @@ public interface UserService {
      * @param user
      * @return
      */
-    User getName(User user);
+    User getUser(User user);
 }
