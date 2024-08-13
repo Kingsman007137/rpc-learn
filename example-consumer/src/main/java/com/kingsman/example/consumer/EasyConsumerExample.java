@@ -14,6 +14,7 @@ public class EasyConsumerExample {
 
         User user = new User();
         user.setName("Kingsman");
+        // 调用服务提供者的方法
         User newUser = userService.getUser(user);
         if (newUser != null) {
             System.out.println("获取用户成功：" + newUser.getName());
