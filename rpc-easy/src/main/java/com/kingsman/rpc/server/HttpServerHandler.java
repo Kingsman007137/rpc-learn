@@ -57,6 +57,8 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
                 rpcResponse.setMessage(e.getMessage());
                 rpcResponse.setException(e);
             }
+            // 响应
+            doResponse(request, rpcResponse, serializer);
         });
     }
 
