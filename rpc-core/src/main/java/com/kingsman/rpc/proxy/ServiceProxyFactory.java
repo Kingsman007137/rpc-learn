@@ -25,4 +25,19 @@ public class ServiceProxyFactory {
                 new ServiceProxy()
         );
     }
+
+    /**
+     * 获取模拟代理对象
+     *
+     * @param serviceClass 服务类
+     * @param <T>          服务类泛型
+     * @return 模拟代理
+     */
+    public static <T> T getMockProxy(Class<T> serviceClass) {
+        return (T) Proxy.newProxyInstance(
+                serviceClass.getClassLoader(),
+                new Class[]{serviceClass},
+                new MockServiceProxy()
+        );
+    }
 }
