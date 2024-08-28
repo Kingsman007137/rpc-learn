@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.kingsman</groupId>
-    <artifactId>rpc-easy</artifactId>
+    <artifactId>rpc-core</artifactId>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
