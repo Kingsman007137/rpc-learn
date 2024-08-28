@@ -7,10 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="rpc-easy" />
         <module name="example-provider" />
         <module name="example-common" />
         <module name="example-consumer" />
+        <module name="rpc-core" />
       </profile>
     </annotationProcessing>
   </component>
